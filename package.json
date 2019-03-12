@@ -1,0 +1,28 @@
+{
+  "name": "02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaryankapur/reg_form_hospital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaryankapur/reg_form_hospital/issues"
+  },
+  "homepage": "https://github.com/aaryankapur/reg_form_hospital#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.17",
+    "mongoose-unique-validator": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
