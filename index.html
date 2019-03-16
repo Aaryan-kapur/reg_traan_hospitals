@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Registration</title>
+
+    <link href="./vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="./vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="./https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="./vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="./vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="./css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div style="margin-left:1vh;margin-top:1vh;">
+        
+    </div>
+    <div style="width:100%;"class="page-wrapper bg-gra-01 p-t-100 p-b-100">
+            <div class="wrapper wrapper--w60">
+                <div class="card card-3">
+                    
+                    <div class="card-body">
+                            <a href="https://www.traan.in" style="color:white;">
+                                <img src="images/Group 29.svg" style="align-content:center; height:15vh;width:15vh; ">
+                                <h2 style="font-family: roboto;">Traan.in</h2>
+                                </a>
+                                <br><br>
+                    <h2 class="title">Registration Info For Hospitals</h2>
+                    <form method="POST" action="/register-hospital">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder=" Name" name="name">
+                        </div>
+                       
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="sector">
+                                    <option disabled="disabled" selected="selected">sector/type</option>
+                                    <option>Private</option>
+                                    <option>Public</option>
+                                    <option>Joint</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="emergency">
+                                    <option disabled="disabled" selected="selected">Emergency Availability</option>
+                                    <option>Services Available</option>
+                                    <option>Services Not Available </option>
+                                    
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                      <h3>Contact:</h3>
+                  <br>
+                        <div class="input-group">
+                            <input class="input--style-3" type="number" placeholder="Enquiry Number" name="enquiry">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="number" placeholder="Emergency Number" name="emergency">
+                        </div>
+                        <h3>Ambulance:</h3>
+<br>            
+                        <div class="input-group col s6">
+                            <input class="input--style-3" type="number" placeholder=" Number of ALS Ambulances" name="numberALSAmbulances">
+                            <input class="input--style-3 " type="number" placeholder=" Tariff for ALS Ambulances" name="tariffALSAmbulances">
+
+                        </div>
+                        <div class="input-group">
+                                <input class="input--style-3" type="number" placeholder=" Number of BLS Ambulances" name="numberBLSAmbulances">
+                                <input class="input--style-3" type="number" placeholder=" Tariff for BLS Ambulances" name="tariffBLSAmbulances">
+                            </div>
+                        
+                        
+                        
+                        <h3>Hospital Details:</h3>
+                        <br>
+                        <div class="input-group">
+                                <input class="input--style-3" type="text" placeholder=" Hospital Registration Number" name="hospitalRegNo">
+                            </div>
+                            <h3font-size:23px;">Nodal Person's Details:</h3>
+                        <br>
+                        <div class="input-group">
+                                <input class="input--style-3" type="text" placeholder="Name" name="nodalName">
+                            </div>
+                            <div class="input-group">
+                                    <input class="input--style-3" type="number" placeholder="Number" name="nodalNumber">
+                                </div>
+                                <div class="input-group">
+                                        <input class="input--style-3" type="email" placeholder="Email id" name="nodalEmail">
+                                    </div>
+                                    <h3font-size:23px;">Other Details:</h3>
+                                    <br>
+                                    <div class="input-group">
+                                            <input class="input--style-3" type="text" placeholder="Hospital Address" name="hospitalAddress">
+                                        </div>
+                                        <div class="input-group">
+                                                <div class="rs-select2 js-select-simple select--no-search">
+                                                    <select name="emergency" multiple placeholder="specialities">
+                                                        <option disabled="disabled" selected="selected">specialities</option>
+                                                        <option>AYUSH</option>
+                                                        <option>Insurance</option>
+                                                        <option>Animal Bite</option>
+                                                        <option>Poison</option>
+                                                        <option>Rabies</option>
+                                                        <option>Mental</option>
+                                                        <option>Rehabilitation</option>
+                                                        <option>Eye-care</option>
+                                                        <option>Cancer</option>
+                                                       
+
+                                                        
+                                                    </select>
+                                                    <div class="select-dropdown"></div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                    <input class="input--style-3" type="text" placeholder="Other specialities" name="otherSpecialities">
+                                                </div>
+                                                
+                                                       <h4> Upload hospital logo picture</h4>
+                                                        <input type="file">
+                                                      <br>
+                                                    
+                        <div class="p-t-10"> 
+                            <button class="btn btn--pill btn--orange" type="submit">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/select2/select2.min.js"></script>
+    <script src="./vendor/datepicker/moment.min.js"></script>
+    <script src="./vendor/datepicker/daterangepicker.js"></script>
+
+    <script src="./js/global.js"></script>
+
+</body>
+
+</html>
